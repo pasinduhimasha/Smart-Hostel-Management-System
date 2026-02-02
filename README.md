@@ -1,4 +1,4 @@
-# 🏨 Smart Hostel Management System
+#  Smart Hostel Management System
 
 A full-stack **Smart Hostel Management System** built using **React** and **Firebase**, designed to manage hostel operations such as rooms, tenants, payments, notices, complaints, and admins in one centralized platform.
 
@@ -6,15 +6,15 @@ This project is suitable for **academic submissions**, **portfolio use**, and **
 
 ---
 
-## 🚀 Features
+##  Features
 
-### 🔐 Authentication
+###  Authentication
 - Firebase Email & Password Authentication
 - Admin-only dashboard access
 - Secure login & logout
 - User registration enabled
 
-### 🛏️ Room Management
+###  Room Management
 - Add, edit, delete rooms
 - Room statuses:
   - Available
@@ -23,13 +23,13 @@ This project is suitable for **academic submissions**, **portfolio use**, and **
 - Prevents double room booking
 - Status auto-updates based on tenant actions
 
-### 👤 Tenant Management
+###  Tenant Management
 - Add, edit, delete tenants
 - Assign only **available rooms**
 - Automatically updates room status
 - Real-time Firestore updates
 
-### 💰 Payment Management
+###  Payment Management
 - Track tenant payments
 - Payment status:
   - Pending
@@ -37,7 +37,7 @@ This project is suitable for **academic submissions**, **portfolio use**, and **
 - Linked with tenant & room
 - Edit and delete payment records
 
-### 📢 Notice Management
+###  Notice Management
 - Create, edit, delete notices
 - Notice fields:
   - Title
@@ -45,25 +45,25 @@ This project is suitable for **academic submissions**, **portfolio use**, and **
   - Created timestamp
 - Notices visible to tenants
 
-### 📝 Complaints / Inquiries
+###  Complaints / Inquiries
 - Tenants submit complaints or inquiries
 - Admin can view, update status, and delete
 - Stored securely in Firestore
 
-### 👮 Admin Management
+###  Admin Management
 - Add and delete admins
 - Admin roles stored in Firestore
 - Email editing disabled (Firebase Auth limitation)
 
 ---
 
-## 🔑 Demo Login Credentials
+##  Demo Login Credentials
 
-### 🔐 Admin Login
+###  Admin Login
 - Email: admin@gmail.com
 - Password: 123456
 
-### 👤 User / Tenant Login
+###  User / Tenant Login
 - Email: pasindu@gmail.com
 - Password: 123456
 
@@ -71,7 +71,7 @@ This project is suitable for **academic submissions**, **portfolio use**, and **
 
 ---
 
-## 🧱 Tech Stack
+##  Tech Stack
 
 ### Frontend
 - React (Vite)
@@ -85,14 +85,14 @@ This project is suitable for **academic submissions**, **portfolio use**, and **
 
 ---
 
-## 📦 About `node_modules`
+##  About `node_modules`
 - The `node_modules` folder is **not included** in this repository.
 - It contains all dependencies and is **automatically generated** by running `npm install`.
 - Uploading it is not necessary and would make the repository huge.
 
 ---
 
-## ▶️ How to Run
+##  How to Run
 
 - Make sure **Node.js** and **npm** are installed on your system.  
 
