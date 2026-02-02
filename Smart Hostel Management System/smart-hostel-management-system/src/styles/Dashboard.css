@@ -1,0 +1,111 @@
+.dashboard-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #dbeafe, #f5f3ff, #ecfeff);
+  animation: bgFlow 12s ease infinite;
+  background-size: 200% 200%;
+  padding: 20px;
+}
+
+/* Header / Title */
+.dashboard-header {
+  max-width: 800px;
+}
+
+.dashboard-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e3a8a; /* Tailwind blue-900 */
+}
+
+.dashboard-subtitle {
+  font-size: 1rem;
+  color: #4b5563; /* Tailwind gray-700 */
+  margin-top: 0.5rem;
+}
+
+/* Glass card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(18px);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+}
+
+/* Hover lift effect */
+.glass-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 40px 80px rgba(0,0,0,0.18);
+}
+
+/* Bubbles */
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.6;
+  filter: blur(8px);
+  z-index: 0;
+}
+
+.bubble.top-left {
+  width: 150px;
+  height: 150px;
+  top: -40px;
+  left: -40px;
+  background: radial-gradient(circle at 30% 30%, rgba(59,130,246,0.35), transparent 70%);
+  animation: bubbleFloat 10s ease-in-out infinite;
+}
+
+.bubble.bottom-right {
+  width: 120px;
+  height: 120px;
+  bottom: -30px;
+  right: -30px;
+  background: radial-gradient(circle at 70% 70%, rgba(168,85,247,0.28), transparent 70%);
+  animation: bubbleFloat 12s ease-in-out infinite;
+}
+
+@keyframes bubbleFloat {
+  0% { transform: translate(0,0) scale(1); opacity: 0.6; }
+  50% { transform: translate(20px,-20px) scale(1.08); opacity: 0.9; }
+  100% { transform: translate(0,0) scale(1); opacity: 0.6; }
+}
+
+/* Card text */
+.card-label {
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.card-value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Quick guide info section */
+.dashboard-info h2 {
+  color: #1e3a8a;
+}
+
+.dashboard-info p, .dashboard-info li {
+  font-size: 0.95rem;
+}
+
+/* Chart & Activity glass cards already use .glass-card */
+
+/* Activity Feed */
+.glass-card ul li {
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.glass-card ul li:last-child {
+  border-bottom: none;
+}
+
+/* Chart title */
+.glass-card h2 {
+  color: #1e3a8a;
+}

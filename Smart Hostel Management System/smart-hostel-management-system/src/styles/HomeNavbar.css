@@ -1,0 +1,164 @@
+/* =========================
+   Navbar Wrapper
+   ========================= */
+.home-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: background 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+/* =========================
+   Navbar Container
+   ========================= */
+.home-navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between; /* Logo left, hamburger right */
+  align-items: center;
+  position: relative;
+}
+
+/* =========================
+   Logo / Brand
+   ========================= */
+.home-logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
+/* =========================
+   Nav Links / Side Menu
+   ========================= */
+.home-nav-links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+/* Common link styles */
+.nav-link {
+  color: #374151;
+  font-weight: 500;
+  position: relative;
+  padding: 4px 0;
+  transition: all 0.3s ease;
+}
+
+/* Hover underline animation */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: #3b82f6;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #3b82f6;
+}
+
+/* Login button */
+.login-btn {
+  padding: 8px 24px;
+  border-radius: 999px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  color: #fff !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(59,130,246,0.4);
+}
+
+/* =========================
+   Three-Dot Hamburger Menu
+   ========================= */
+.menu-dot {
+  display: none; /* hidden on desktop */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;   /* overall width */
+  height: 24px;  /* overall height */
+  cursor: pointer;
+  padding: 4px 0;
+  z-index: 1100;
+  transition: transform 0.3s ease;
+}
+
+.menu-dot span {
+  display: block;
+  width: 100%;
+  height: 4px;               /* bar height */
+  background-color: #1e3a8a;
+  border-radius: 2px;         /* rounded ends */
+  transition: all 0.3s ease;
+}
+
+/* Animate into X when open */
+.menu-dot.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-dot.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-dot.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* =========================
+   Mobile Styles
+   ========================= */
+@media (max-width: 768px) {
+  /* Show hamburger */
+  .menu-dot {
+    display: flex;
+    margin-left: auto; /* push to far right */
+  }
+
+  /* Side menu styles */
+  .home-nav-links {
+    position: fixed;
+    top: 0;
+    right: -250px; /* hidden initially */
+    height: 100vh;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.97);
+    flex-direction: column;
+    padding: 70px 20px 20px 20px; /* space for navbar */
+    gap: 20px;
+    box-shadow: -4px 0 20px rgba(0,0,0,0.1);
+    transition: right 0.3s ease;
+    z-index: 1050;
+  }
+
+  .home-nav-links.open {
+    right: 0;
+  }
+
+  /* Links in side menu */
+  .home-nav-links .nav-link,
+  .home-nav-links .login-btn {
+    font-size: 1.1rem;
+  }
+}

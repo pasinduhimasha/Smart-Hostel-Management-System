@@ -1,0 +1,58 @@
+.rooms-page {
+  min-height: 100%;
+  background: radial-gradient(circle at top left, #dbeafe, #f5f3ff, #ecfeff);
+  animation: bgFlow 12s ease infinite;
+  background-size: 200% 200%;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
+/* Glass Card */
+.glass-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(18px);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.18);
+}
+
+/* Bubbles */
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(8px);
+}
+.top-left {
+  width: 150px;
+  height: 150px;
+  top: -40px;
+  left: -40px;
+  background: radial-gradient(circle at 30% 30%, rgba(59,130,246,0.35), transparent 70%);
+  animation: bubbleFloat 9s ease-in-out infinite;
+}
+.bottom-right {
+  width: 120px;
+  height: 120px;
+  bottom: -30px;
+  right: -30px;
+  background: radial-gradient(circle at 70% 70%, rgba(168,85,247,0.28), transparent 70%);
+  animation: bubbleFloat 12s ease-in-out infinite;
+}
+
+@keyframes bubbleFloat {
+  0% { transform: translate(0, 0) scale(1); opacity: 0.6; }
+  50% { transform: translate(20px, -20px) scale(1.08); opacity: 0.9; }
+  100% { transform: translate(0, 0) scale(1); opacity: 0.6; }
+}

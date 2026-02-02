@@ -1,0 +1,50 @@
+.tenants-page {
+  min-height: 100%;
+  padding: 20px;
+  background: radial-gradient(circle at top left, #dbeafe, #f5f3ff, #ecfeff);
+  font-family: 'Inter', sans-serif;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+/* Tenant Card */
+.tenant-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tenant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.tenant-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.tenant-room {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+.tenant-status {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #10b981; /* green for active */
+}
+
+.tenant-status.inactive {
+  color: #ef4444; /* red for inactive */
+}
