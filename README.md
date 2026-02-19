@@ -1,99 +1,103 @@
-# Smart Hostel Management System 🏨
+# Smart Kade 🍽️
 
-A full-stack **Smart Hostel Management System** built with **React (Vite)** and **Firebase**, managing rooms, tenants, payments, notices, complaints, and admins in one real-time platform. Suitable for academic, portfolio, or practical use.
+**Smart Kade** is a modern online food ordering web application built with **React.js (Vite)**, **Node.js**, and **MongoDB (local)**. Users can browse and search the menu, filter by categories, view today’s offers, place orders, and download detailed bills. Admins can securely manage menu items by adding, updating, or deleting dishes. :contentReference[oaicite:3]{index=3}
 
 ---
 
 ## Table of Contents
 - [Features](#features)
-- [Demo Credentials](#demo-credentials)
 - [Tech Stack](#tech-stack)
 - [Screenshots](#screenshots)
-- [How to Run](#how-to-run)
+- [Demo Credentials](#demo-credentials)
+- [Setup Instructions](#setup-instructions)
 - [Author](#author)
 - [License](#license)
 
 ---
 
 ## Features
-- **Authentication:** Firebase Email & Password Auth, Admin-only dashboard, secure login & logout, user registration
-- **Room Management:** Add/edit/delete rooms, auto-updates status, prevents double booking
-- **Tenant Management:** Add/edit/delete tenants, assign available rooms, real-time Firestore updates
-- **Payment Management:** Track payments, pending/paid status, linked with tenant & room
-- **Notice Management:** Create/edit/delete notices, visible to tenants
-- **Complaints / Inquiries:** Tenants submit complaints, admin manages status
-- **Admin Management:** Add/delete admins, secure roles in Firestore
-
----
-
-## Demo Credentials
-
-### Admin
-- Email: `admin@gmail.com`
-- Password: `123456`
-
-### User / Tenant
-- Email: `pasindu@gmail.com`
-- Password: `123456`
-
-> Users can also register via the registration page.
+- Browse the full menu with category filters and search functionality  
+- View today’s special offers  
+- User accounts: place orders and download detailed bills  
+- Admin panel: add, update, or delete menu items  
+- Responsive design for desktop and mobile :contentReference[oaicite:4]{index=4}
 
 ---
 
 ## Tech Stack
-- **Frontend:** React (Vite), React Router DOM, Tailwind CSS / Custom CSS, React Icons  
-- **Backend / Services:** Firebase Authentication, Firebase Firestore (Realtime Database)
+- **Frontend:** React.js (Vite)  
+- **Backend:** Node.js with Express  
+- **Database:** MongoDB (local)  
+- **Authentication:** JWT-based secure login  
+- **Styling:** CSS / Tailwind / React components :contentReference[oaicite:5]{index=5}
 
 ---
 
 ## Screenshots
 
-Screenshots are in `Scrrenshots/` folder. Use the correct relative paths:
+Below are thumbnails of the app UI. Click to see full‑size images. (All screenshots are located in the `smart-kade-api/screenshots/` folder.) :contentReference[oaicite:6]{index=6}
 
-### Home & Pages
-| ![Home](Scrrenshots/Hompe_page.jpg) | ![About](Scrrenshots/About_us.jpg) | ![Services](Scrrenshots/Services.jpg) | ![Register](Scrrenshots/Register.jpg) |
-|------------------------------------|----------------------------------|------------------------------------|----------------------------------|
-| Home Page | About Us | Services | Register Page |
+### Main Screens
+| Home | About | Why Choose Us | Admin Login |
+|------|-------|---------------|-------------|
+| ![Home](smart-kade-api/screenshots/Home.jpg) | ![About](smart-kade-api/screenshots/About.jpg) | ![WhyChooseUs](smart-kade-api/screenshots/WhyChooseUs.jpg) | ![AdminLogin](smart-kade-api/screenshots/AdminLogin.jpg) |
 
-### Users & Rooms
-| ![Tenants](Scrrenshots/Tenants.jpg) | ![Rooms](Scrrenshots/rooms.jpg) | ![Login](Scrrenshots/login.jpg) |
-|------------------------------------|-------------------------------|-------------------------------|
-| Tenants | Rooms | Login Page |
+### Auth Screens
+| User Login | Register |
+|------------|----------|
+| ![Login](smart-kade-api/screenshots/login.jpg) | ![Register](smart-kade-api/screenshots/Register.jpg) |
 
-### Admin Dashboard
-| ![Dashboard](Scrrenshots/Dashboard.jpg) | ![Add Admin](Scrrenshots/addAdmin.jpg) | ![Manage Rooms](Scrrenshots/ManageRooms.jpg) | ![Manage Tenants](Scrrenshots/ManageTenants.jpg) |
-|----------------------------------------|-------------------------------------|----------------------------------------|-----------------------------------------|
-| Dashboard | Add Admin | Manage Rooms | Manage Tenants |
+### App Usage
+| Menu | Manage Items | Add Item | Add Offer |
+|------|--------------|----------|-----------|
+| ![Menu](smart-kade-api/screenshots/Menu.jpg) | ![ManageItems](smart-kade-api/screenshots/manageitems.jpg) | ![AddItem](smart-kade-api/screenshots/Additeam.jpg) | ![AddOffer](smart-kade-api/screenshots/addoffer.jpg) |
 
-### Management Pages
-| ![Manage Payments](Scrrenshots/ManagePayments.jpg) | ![Manage Notices](Scrrenshots/ManageNotices.jpg) | ![Manage Inquiries](Scrrenshots/ManageInquiries.jpg) | ![Complaints](Scrrenshots/Complaints.jpg) |
-|----------------------------------------------------|-----------------------------------------------|------------------------------------------------|------------------------------------------|
-| Payments | Notices | Inquiries | Complaints |
+### Order Bill
+| Bill |
+|------|
+| ![Bill](smart-kade-api/screenshots/bill.jpg) | :contentReference[oaicite:7]{index=7}
 
-> **Tip:** GitHub auto-scales images. Click on thumbnails to see full-size.
+> 📝 GitHub auto‑scales thumbnail images — clicking them opens the full version.
 
 ---
 
-## How to Run
+## Demo Credentials
+
+### User
+- Email: `pasindu@gmail.com`  
+- Password: `123456` :contentReference[oaicite:8]{index=8}
+
+### Admin
+- Email: `admin@gmail.com`  
+- Password: `123456` :contentReference[oaicite:9]{index=9}
+
+---
+
+## Setup Instructions
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/pasinduhimasha/Smart-Hostel-Management-System.git
-cd smart-hostel-management-system
-Install dependencies
+git clone https://github.com/pasinduhimasha/Smart-Kade.git
+cd Smart-Kade
+Backend Setup
 
+cd smart-kade-api
 npm install
-Configure Firebase
+Make sure MongoDB is running locally
 
-Set up your Firebase project
+Configure .env (e.g., PORT, DB_URI, JWT_SECRET)
 
-Update firebaseConfig.js or .env with your Firebase credentials
-
-Run the app
-
+cd smart-kade-frontend
+npm install
 npm run dev
+Open the app
+
+User: http://localhost:5173 (default Vite port)
+
+Admin login via the admin panel
+
 Author
-Pasindu Himasha – Student Project, Smart Hostel Management System
+Pasindu Himasha — Student & full‑stack developer. 
 
 License
-This project is developed for educational purposes.
+This project is created for educational and portfolio purposes — feel free to explore and improve it. 
