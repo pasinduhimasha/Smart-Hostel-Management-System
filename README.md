@@ -1,4 +1,4 @@
-# Smart Hostel Management System 
+# Smart Hostel Management System 🏨
 
 A full-stack **Smart Hostel Management System** built using **React (Vite)** and **Firebase**, designed to manage hostel operations such as rooms, tenants, payments, notices, complaints, and admins in one centralized platform.
 
@@ -52,25 +52,25 @@ This project is suitable for **academic submissions**, **portfolio use**, and **
 
 ## Screenshots
 
-Click any image to view full-size. Screenshots are in `Scrrenshots/`.
+Click any thumbnail to view full-size. Screenshots are in `Screenshots/`.
 
 ### Home & Pages
-| ![Home](Scrrenshots/Hompe_page.jpg) | ![About](Scrrenshots/About_us.jpg) | ![Services](Scrrenshots/Services.jpg) | ![Register](Scrrenshots/Register.jpg) |
+| ![Home](Screenshots/Hompe_page.jpg) | ![About](Screenshots/About_us.jpg) | ![Services](Screenshots/Services.jpg) | ![Register](Screenshots/Register.jpg) |
 |------------------------------------|----------------------------------|------------------------------------|----------------------------------|
 | Home Page | About Us | Services | Register Page |
 
 ### Users & Rooms
-| ![Tenants](Scrrenshots/Tenants.jpg) | ![Rooms](Scrrenshots/rooms.jpg) | ![Login](Scrrenshots/login.jpg) |
+| ![Tenants](Screenshots/Tenants.jpg) | ![Rooms](Screenshots/rooms.jpg) | ![Login](Screenshots/login.jpg) |
 |------------------------------------|-------------------------------|-------------------------------|
 | Tenants | Rooms | Login Page |
 
 ### Admin Dashboard
-| ![Dashboard](Scrrenshots/Dashboard.jpg) | ![Add Admin](Scrrenshots/addAdmin.jpg) | ![Manage Rooms](Scrrenshots/ManageRooms.jpg) | ![Manage Tenants](Scrrenshots/ManageTenants.jpg) |
+| ![Dashboard](Screenshots/Dashboard.jpg) | ![Add Admin](Screenshots/addAdmin.jpg) | ![Manage Rooms](Screenshots/ManageRooms.jpg) | ![Manage Tenants](Screenshots/ManageTenants.jpg) |
 |----------------------------------------|-------------------------------------|----------------------------------------|-----------------------------------------|
 | Dashboard | Add Admin | Manage Rooms | Manage Tenants |
 
 ### Management Pages
-| ![Manage Payments](Scrrenshots/ManagePayments.jpg) | ![Manage Notices](Scrrenshots/ManageNotices.jpg) | ![Manage Inquiries](Scrrenshots/ManageInquiries.jpg) | ![Complaints](Scrrenshots/Complaints.jpg) |
+| ![Manage Payments](Screenshots/ManagePayments.jpg) | ![Manage Notices](Screenshots/ManageNotices.jpg) | ![Manage Inquiries](Screenshots/ManageInquiries.jpg) | ![Complaints](Screenshots/Complaints.jpg) |
 |----------------------------------------------------|-----------------------------------------------|------------------------------------------------|------------------------------------------|
 | Payments | Notices | Inquiries | Complaints |
 
