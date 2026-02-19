@@ -52,25 +52,25 @@ This project is suitable for **academic submissions**, **portfolio use**, and **
 
 ## Screenshots
 
-Click any thumbnail to view full-size. Screenshots are in `Screenshots/`.
+Click any thumbnail to view full-size. Screenshots are in the `Scrrenshots/` folder.
 
 ### Home & Pages
-| ![Home](Screenshots/Hompe_page.jpg) | ![About](Screenshots/About_us.jpg) | ![Services](Screenshots/Services.jpg) | ![Register](Screenshots/Register.jpg) |
+| ![Home](Scrrenshots/Hompe_page.jpg) | ![About](Scrrenshots/About_us.jpg) | ![Services](Scrrenshots/Services.jpg) | ![Register](Scrrenshots/Register.jpg) |
 |------------------------------------|----------------------------------|------------------------------------|----------------------------------|
 | Home Page | About Us | Services | Register Page |
 
 ### Users & Rooms
-| ![Tenants](Screenshots/Tenants.jpg) | ![Rooms](Screenshots/rooms.jpg) | ![Login](Screenshots/login.jpg) |
+| ![Tenants](Scrrenshots/Tenants.jpg) | ![Rooms](Scrrenshots/rooms.jpg) | ![Login](Scrrenshots/login.jpg) |
 |------------------------------------|-------------------------------|-------------------------------|
 | Tenants | Rooms | Login Page |
 
 ### Admin Dashboard
-| ![Dashboard](Screenshots/Dashboard.jpg) | ![Add Admin](Screenshots/addAdmin.jpg) | ![Manage Rooms](Screenshots/ManageRooms.jpg) | ![Manage Tenants](Screenshots/ManageTenants.jpg) |
+| ![Dashboard](Scrrenshots/Dashboard.jpg) | ![Add Admin](Scrrenshots/addAdmin.jpg) | ![Manage Rooms](Scrrenshots/ManageRooms.jpg) | ![Manage Tenants](Scrrenshots/ManageTenants.jpg) |
 |----------------------------------------|-------------------------------------|----------------------------------------|-----------------------------------------|
 | Dashboard | Add Admin | Manage Rooms | Manage Tenants |
 
 ### Management Pages
-| ![Manage Payments](Screenshots/ManagePayments.jpg) | ![Manage Notices](Screenshots/ManageNotices.jpg) | ![Manage Inquiries](Screenshots/ManageInquiries.jpg) | ![Complaints](Screenshots/Complaints.jpg) |
+| ![Manage Payments](Scrrenshots/ManagePayments.jpg) | ![Manage Notices](Scrrenshots/ManageNotices.jpg) | ![Manage Inquiries](Scrrenshots/ManageInquiries.jpg) | ![Complaints](Scrrenshots/Complaints.jpg) |
 |----------------------------------------------------|-----------------------------------------------|------------------------------------------------|------------------------------------------|
 | Payments | Notices | Inquiries | Complaints |
 
