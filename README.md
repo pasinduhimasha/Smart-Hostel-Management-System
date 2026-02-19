@@ -1,8 +1,6 @@
 # Smart Hostel Management System 🏨
 
-A full-stack **Smart Hostel Management System** built using **React (Vite)** and **Firebase**, designed to manage hostel operations such as rooms, tenants, payments, notices, complaints, and admins in one centralized platform.
-
-This project is suitable for **academic submissions**, **portfolio use**, and **real-world hostel management concepts**.
+A full-stack **Smart Hostel Management System** built with **React (Vite)** and **Firebase**, managing rooms, tenants, payments, notices, complaints, and admins in one real-time platform. Suitable for academic, portfolio, or practical use.
 
 ---
 
@@ -18,9 +16,8 @@ This project is suitable for **academic submissions**, **portfolio use**, and **
 ---
 
 ## Features
-
 - **Authentication:** Firebase Email & Password Auth, Admin-only dashboard, secure login & logout, user registration
-- **Room Management:** Add/edit/delete rooms, status auto-updates, prevents double booking
+- **Room Management:** Add/edit/delete rooms, auto-updates status, prevents double booking
 - **Tenant Management:** Add/edit/delete tenants, assign available rooms, real-time Firestore updates
 - **Payment Management:** Track payments, pending/paid status, linked with tenant & room
 - **Notice Management:** Create/edit/delete notices, visible to tenants
@@ -29,7 +26,7 @@ This project is suitable for **academic submissions**, **portfolio use**, and **
 
 ---
 
-## Demo Login Credentials
+## Demo Credentials
 
 ### Admin
 - Email: `admin@gmail.com`
@@ -39,20 +36,19 @@ This project is suitable for **academic submissions**, **portfolio use**, and **
 - Email: `pasindu@gmail.com`
 - Password: `123456`
 
-> Users can also register using the registration page.
+> Users can also register via the registration page.
 
 ---
 
 ## Tech Stack
-
-**Frontend:** React (Vite), React Router DOM, Tailwind CSS / Custom CSS, React Icons  
-**Backend / Services:** Firebase Authentication, Firebase Firestore (Realtime Database)
+- **Frontend:** React (Vite), React Router DOM, Tailwind CSS / Custom CSS, React Icons  
+- **Backend / Services:** Firebase Authentication, Firebase Firestore (Realtime Database)
 
 ---
 
 ## Screenshots
 
-Click any thumbnail to view full-size. Screenshots are in the `Scrrenshots/` folder.
+Screenshots are in `Scrrenshots/` folder. Use the correct relative paths:
 
 ### Home & Pages
 | ![Home](Scrrenshots/Hompe_page.jpg) | ![About](Scrrenshots/About_us.jpg) | ![Services](Scrrenshots/Services.jpg) | ![Register](Scrrenshots/Register.jpg) |
@@ -74,7 +70,7 @@ Click any thumbnail to view full-size. Screenshots are in the `Scrrenshots/` fol
 |----------------------------------------------------|-----------------------------------------------|------------------------------------------------|------------------------------------------|
 | Payments | Notices | Inquiries | Complaints |
 
-> **Tip:** GitHub will auto-scale images. Click on thumbnails to see full-size screenshots.
+> **Tip:** GitHub auto-scales images. Click on thumbnails to see full-size.
 
 ---
 
@@ -87,17 +83,17 @@ cd smart-hostel-management-system
 Install dependencies
 
 npm install
+Configure Firebase
+
+Set up your Firebase project
+
+Update firebaseConfig.js or .env with your Firebase credentials
+
 Run the app
 
 npm run dev
-Ensure Node.js and npm are installed
-
-Configure Firebase with your project settings
-
 Author
-Pasindu Himasha
-Student Project – Smart Hostel Management System
+Pasindu Himasha – Student Project, Smart Hostel Management System
 
 License
 This project is developed for educational purposes.
-
